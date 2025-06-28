@@ -230,13 +230,19 @@
 
 <script>
   function validarFormulario(form) {
-    // Puedes validar aquí si quieres, por ahora solo mensaje
-    alert("¡Formulario enviado correctamente! En unos días recibirás una respuesta.");
-    
-    // Evita que el formulario recargue o redirija la página
-    return false;
+    const nombre = form.nombre.value.trim();
+    const correo = form.correo.value.trim();
+
+    if (nombre === "" || correo === "") {
+      alert("Por favor completa todos los campos.");
+      return false;
+    }
+
+    alert("¡Gracias " + nombre + "! Tu mensaje fue enviado correctamente. En unos días recibirás una respuesta al correo: " + correo);
+    return false; // Esto evita que se recargue o redirija la página
   }
 </script>
+
 
 
 
