@@ -218,17 +218,25 @@
     <p>Email: contacto@ecobrota.com</p>
     <p>Teléfono: +52 1 729 391 7594</p>
     
-    <form id="formPost" action="#" method="POST" onsubmit="return validarFormulario(this)">
-        <label>Nombre:
-            <input type="text" name="nombre" required />
-        </label>
-        <label>Correo:
-            <input type="email" name="correo" required />
-        </label>
-        <input type="#" value="Enviar" />
-    </form>
-</section>
-</main>
+<form id="formPost" action="#" method="POST" onsubmit="return validarFormulario(this)">
+  <label>Nombre:
+    <input type="text" name="nombre" required />
+  </label>
+  <label>Correo:
+    <input type="email" name="correo" required />
+  </label>
+  <input type="submit" value="Enviar" />
+</form>
+
+<script>
+  function validarFormulario(form) {
+    // Puedes validar aquí si quieres, por ahora solo mensaje
+    alert("¡Formulario enviado correctamente! En unos días recibirás una respuesta.");
+    
+    // Evita que el formulario recargue o redirija la página
+    return false;
+  }
+</script>
 
 
 
