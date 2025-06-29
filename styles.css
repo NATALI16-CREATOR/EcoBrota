@@ -6,7 +6,9 @@ body {
   background: linear-gradient(to bottom right, #e3f9e5, #ffffff);
   color: #333;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* HEADER FIJO Y RESPONSIVO */
 .encabezado {
   position: fixed;
