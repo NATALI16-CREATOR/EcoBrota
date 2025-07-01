@@ -9,32 +9,6 @@ body {
 
 /*empieza carrusel */
 
-div .image-container1 {
-  margin-left: 35%;
-  width: 50%;
-  max-width: 300px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-  padding: 50px;/*para que se baje mas las imagenes */
-  transition: transform 0.3s ease-in-out;
-}
-
-.image-container-inner {
-  display: flex;
-  width: 100%; /* Ajustar al número de imágenes */
-  animation: slide 9s infinite;
-}
-
-.image-container-item {
-  flex: 0 0 100%;
-}
-
-.image-container1 img {
-  width: 100%;
-  border-radius: 10px;
-}
 
 /* Animación automática */
 @keyframes slide {
